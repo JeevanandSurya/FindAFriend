@@ -1,0 +1,18 @@
+.button{
+    background-color: 54436B;
+    border: none;
+    color: ACFFAD;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.left_body{
+    background-color: 50CB93;
+}
+
+.middle_body{
+    background-color: ACFFAD;
+}
