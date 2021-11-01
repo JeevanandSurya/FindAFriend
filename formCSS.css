@@ -68,11 +68,8 @@ nav {
     position: relative;
     top: 0;
     width: 100%;
-  }
-
-nav {
     float: left;
-}
+  }
   
 nav a {
     display: inline-block;
@@ -90,5 +87,4 @@ nav a:hover:not(.active) {
 .active {
     color: #54436B;
     background-color: #50CB93;
-  }
-  
+}
