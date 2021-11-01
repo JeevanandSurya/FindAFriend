@@ -8,8 +8,8 @@ html{
 form{
     position: absolute;
     display: inline-block;
-    left: 600px;
-    top: 150px;
+    left: 550px;
+    top: 140px;
     color: #ACFFAD;
     font-family: "Impact",monospace;
 }
@@ -20,7 +20,9 @@ input, select{
     padding: 12px 20px;
     border: none;
     margin: 8px 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
+    width: 250px;
+    height: 20px;
     display: inline;
     float: left;
 }
@@ -62,25 +64,25 @@ button:hover{
     font-size: 16px;
 }
 
-ul {
+nav {
     position: relative;
     top: 0;
     width: 100%;
   }
 
-li {
+nav {
     float: left;
 }
   
-li a {
-    display: block;
+nav a {
+    display: inline-block;
     color: #50CB93;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
   
-li a:hover:not(.active) {
+nav a:hover:not(.active) {
     color: #ACFFAD;
     background-color: #413d57;
 }

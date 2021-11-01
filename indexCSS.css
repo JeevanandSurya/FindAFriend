@@ -12,6 +12,12 @@ body{
     margin: 0;
 }
 
+a{
+    color: #ACFFAD;
+    text-decoration: none;
+    padding: 10px;
+}
+
 .main-content{
     display: block;
     position: relative;
