@@ -27,6 +27,19 @@ input, select{
     float: left;
 }
 
+textarea{
+    background-color: #413d57;
+    color: #ACFFAD;
+    padding: 12px 20px;
+    border: none;
+    margin: 8px 0;
+    box-sizing: content-box;
+    width: 250px;
+    height: 80px;
+    display: inline;
+    float: left;
+}
+
 label{
     display: inline;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

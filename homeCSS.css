@@ -33,12 +33,20 @@ input,button{
     position: relative;
     /* border: none; */
     left: 150px;
-    background-color: #54436B;
-    color: #50CB93;
-    padding: 15px 32px;
     top: 25%;
+    background-color: #54436B;
+    color: #ACFFAD;
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+input:hover, button:hover{
+    border: none;
+    background-color: #413d57;
+    padding: 15px 32px;
 }
 
 .content{

@@ -13,9 +13,13 @@
         <a>Help</a>
     </nav>
     <form>
-        <label>What's favourite field of study?</label><br><textarea rows="10" cols = "10" id="fname"></textarea><br><br>
-        <label>Do you posses a phd? If yes/no say why?</label><br><textarea rows="10" cols = "10" id="fname"></textarea><br><br>
-        <label>What's the most necessary skill to survive in modern world?</label><br><textarea rows="10" cols = "10" id="fname"></textarea><br><br>
+        <label>Problem:</label><br><select name="Problem" id="problem"><
+            <option>In Registering</option>
+            <option>In Finding Friends</option>
+            <option>In Security</option>
+            <option>Others</option>
+        </select><br><br>
+        <label>Description:</label><br><textarea rows="10" cols = "10" id="fname"></textarea><br><br>
         <button type="button" onclick="getDataFromForm()">Submit</button>
     </form>
 </body>
