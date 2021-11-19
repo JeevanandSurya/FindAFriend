@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="formCSS.css">
+    <script src="getRegisterData.js"></script>
+</head>
+<body onload="init()">
+    <nav>
+        <a href="index.html">Home</a>
+        <a>Explore</a>
+        <a>Help</a>
+    </nav>
+    <form>
+        <label>What's favourite field of study?</label><textarea rows="5" rows = "10"></textarea><br><br>
+        <label>Do you posses a phd? If yes/no say why?</label><input type="text" id="fname"><br><br>
+        <label>What's the most necessary skill to survive in modern world?</label><input type="text" id="fname"><br><br>
+        <button type="button" onclick="getDataFromForm()">Submit</button>
+    </form>
+</body>
+</html>
