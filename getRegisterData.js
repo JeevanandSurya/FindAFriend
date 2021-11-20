@@ -1,10 +1,3 @@
-var db = openDatabase('userInfo','1.0','details',5*1024*1024);
-function init(){
-    db.transaction(function (tx){
-        tx.executeSql('CREATE TABLE IF NOT EXISTS details( email text,fname text,lname text,phone integer, gender text, dob text, pwd text, primary key(email,phone))')
-    });
-}
-
 function getDataFromForm(){
     var fname = document.getElementById("fname").value;
     var lname = document.getElementById("lname").value;
@@ -34,6 +27,7 @@ function getDataFromForm(){
             window.alert("Passwords must be alphanueric with atleast one special character");
             return false;
     }
-
     
+    window.alert('Registerd');
+    window.location = 'home.html';
 }

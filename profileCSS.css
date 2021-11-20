@@ -5,12 +5,12 @@
     height:100%;
     width: 50%;
     position:absolute;
-    top: 0;
+    top: 0px;
     left: 0;
 }
 
 
-.button{
+input,.button{
     background-color: #54436B;
     border: none;
     color: #ACFFAD;
@@ -21,7 +21,7 @@
     font-size: 16px;
 }
 
-.button:hover{
+input,.button:hover{
     border: none;
     background-color: #413d57;
     padding: 15px 32px;
@@ -42,8 +42,27 @@
     width: 100%;
 }
 
+nav {
+    position: relative;
+    top: 0;
+    background-color:#ACFFAD;
+    float: left;
+  }
+  
+nav a {
+    display: inline-block;
+    color: #413d57;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav a:hover:not(.active) {
+    color: #ACFFAD;
+    background-color: #413d57;
+}
 
-/* .profilephoto img{
-    width: 100%;
-    height: 100%;
-} */
+.active {
+    color: #54436B;
+    background-color: #50CB93;
+}
