@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <title>Help</title>
     <link rel="stylesheet" href="formCSS.css">
-    <script src="getRegisterData.js"></script>
+    <script>
+        function tell(){
+            window.alert('We will get back to you soon');
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -19,7 +23,7 @@
             <option>Others</option>
         </select><br><br>
         <label>Description:</label><br><textarea rows="10" cols = "10" id="fname"></textarea><br><br>
-        <button type="button" onclick="getDataFromForm()">Submit</button>
+        <button type="button" onclick="tell()">Submit</button>
     </form>
 </body>
 </html>
