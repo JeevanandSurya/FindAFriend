@@ -1,33 +1,23 @@
-var text = document.getElementById('myfilter');
-var myData;
-var postData = window.localStorage.getItem("save");
-var reset = text.innerHTML;
-// if no data
-if (postData == null || postData == '') {
-    myData = text.innerHTML;
-    // store default value
-    window.localStorage.setItem("save", myData);
-    // make it placeholder style
-    text.classList.remove('changed');
-} else {
-    // if there is a value post it
-    text.innerHTML = postData;
-    // make dark text
-    text.classList.add('changed');
-}
-
-function saveEdits() {
-    // store the current value
-    myData = text.innerHTML;
-    // local store the value
-    window.localStorage.setItem("save", myData);
-    text.classList.add('changed');
-}
-
-function clearStorage() {
-    text.classList.remove('changed');
-    // clear storage
-    window.localStorage.clear("save");
-    // return to default text
-    text.innerHTML = reset;
-}
+document.addEventListener('DOMContentLoaded', function () {
+    var gender_input = document.getElementById('gender');
+    var study_input = document.getElementById("study");
+    var lfor_input = document.getElementById("lfor");
+    if (localStorage['gender']) { // if job is set
+        gender_input.value = localStorage['gender']; // set the value
+    }
+    gender_input.onchange = function () {
+         localStorage["gender"] = this.value; // change localStorage on change
+     }
+    if (localStorage["study"]) { // if job is set
+        study_input.value = localStorage["study"]; // set the value
+    }
+    study_input.onchange = function () {
+         localStorage["study"] = this.value; // change localStorage on change
+     }
+    if (localStorage["lfor"]) { // if job is set
+        lfor_input.value = localStorage["lfor"]; // set the value
+    }
+    lfor_input.onchange = function () {
+         localStorage["lfor"] = this.value; // change localStorage on change
+     }
+ });

@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="formCSS.css">
-    <script src="profile.js"></script>
     <title>Filters</title>
 </head>
 <body>
-    <div class="filter" id="myfilter" contenteditable="">
+    <div class="filter" id=myFilter>
         <form>
-            <label>Gender:</label><select name="Gender" id="gender">
+            <label>Gender:</label>
+            <select name="Gender" id="gender">
                 <option>Male</option>
                 <option>Female</option>
                 <option>Transgender</option>
                 <option>Non-Binary</option>
                 <option>Fine with anyone</option>
-            </select><br><br>
+            </select>
+            <br><br>
             <label>Scholar:</label><select name="study" id="study">
                 <option>Yes</option>
                 <option>No</option>
@@ -25,32 +26,17 @@
             </select>
             <label>Looking For:</label><select name="lfor" id="lfor">
                 <option>Friends</option>
-                <option>Workers</option>
+                <option>Employees</option>
                 <option>Study mates</option>
-                <option>playing</option>
+                <option>Colaborator</option>
                 <option>Fine with anyone</option>
             </select>
         </form>
-
-        <button style = "background-color: #54436B;
-    border: none;
-    color: #ACFFAD;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;" onclick="saveEdits()">Save</button>
-
-    <button style = "background-color: #54436B;
-    border: none;
-    color: #ACFFAD;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;" onclick="clearStorage()">Clear</button><br><br>
+        <br><br>
+        <button value="home" onclick="location.href='home.html'">Done</button>
     </div>
-
     
 </body>
 </html>
+
+<script src="filter.js"></script>
