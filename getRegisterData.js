@@ -9,6 +9,19 @@ function getDataFromForm(){
     var confirm_pwd = document.getElementById("confirmPwd").value;
 
     var split_dob = dob.split("-");
+
+    fname = fname.toString(),lname = lname.toString();
+
+    if(fname == '' || lname == ''){
+        window.alert('Name is empty');
+        return false;
+    }
+
+    if(!(fname.match(/[a-zA-Z]/g)) || !(lname.match(/[a-zA-Z]/g))){
+        window.alert('Name must be only alphabets');
+        return false;
+    }
+
     if(split_dob[0] > 2003){
         window.alert('You must 18 or older to register');
         return false;
